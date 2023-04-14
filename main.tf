@@ -1,3 +1,7 @@
+data "http" "myip" {
+  url = "http://ifconfig.me"
+}
+
 resource "google_compute_network" "this" {
   name = var.name
 }
