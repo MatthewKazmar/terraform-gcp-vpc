@@ -1,5 +1,5 @@
 variable "name" {
-  description = "Name of the instance."
+  description = "Name of the VPC."
   type        = string
 }
 
