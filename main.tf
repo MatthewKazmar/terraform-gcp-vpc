@@ -3,7 +3,8 @@ data "http" "myip" {
 }
 
 resource "google_compute_network" "this" {
-  name = var.name
+  name                    = var.name
+  auto_create_subnetworks = false
 }
 
 resource "google_compute_subnetwork" "workload" {
